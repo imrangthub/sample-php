@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>jQuery |start </title>
+
+    <!-- Bootstrap -->
+    <link href="../Templating_01/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Templating_01/css/style.css">
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <style>
+        .para {
+            height: 400px;
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main_container">
+    <div class="container">
+
+        <header class="header_area">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="logo">
+                        <h2>jQuery</h2>
+                        <P>Learning jQuery and Ajax</P>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navigation">
+            <div class="row">
+                <div class="col-xs-12 col-md-11 col-md-offset-1">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <section class="content_area">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="custom_nav">
+                        <ul>
+                            <li class="bar"></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Registration</a></li>
+                            <li><a href="#">Requirements</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <div class="bar"></div>
+                        <form action="#" class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Search..">
+                                <input type="submit" class="btn btn-default" value="GO >>">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <div class="about_us" style=" height: 500px">
+                            <h2>Slider rang</h2>
+                            <div class="para">
+                                <div class="showAmount" style="margin-bottom:20px">
+                                     Amount:<span id="state"></span>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td><label for="MinAmount">Minimum amount:</label></td>
+                                        <td><input type="text" id="MinAmount"/></td>
+                                    </tr>
+                                    <tr>
+                                    <td><label for="MaxAmount">Maximum amount:</label></td>
+                                    <td><input type="text" id="MaxAmount"/></td>
+                                   </tr>
+                                </table>
+                                <div id="slider" style="margin-top:20px; background-color: #2aabd2"></div>
+                            </div>
+
+                            <script>
+                                $(document).ready(function(){
+                                    var getOutput = $("#state");
+                                    var getSlider = $("#slider");
+
+                                    getSlider.slider({
+                                        range:true,
+                                        min:10,
+                                        max:100,
+                                        values:[10, 40],
+                                        slide:function(event, ui){
+                                            getOutput.html(ui.values[0]+'-'+ui.values[1]+' Taka.')
+                                            $("#MinAmount").val(ui.values[0]);
+                                            $("#MaxAmount").val(ui.values[1]);
+                                        }
+//                                        stop:function(event, ui){
+//                                            $("#MinAmount").val(ui.values[0]);
+//                                            $("#MaxAmount").val(ui.values[1]);
+//                                        }
+                                    });
+
+                                    getOutput.html(getSlider.slider('values',0)+'-'+getSlider.slider('values',1)+ 'Taka.');
+                                    $("#MinAmount").val(getSlider.slider('values',0));
+                                    $("#MaxAmount").val(getSlider.slider('values',1));
+
+                                });
+                            </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer class="footer_area">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="copyright">
+                        <p>&copy; Copyright Md Imran hossain.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</div>
+</body>
+</html>

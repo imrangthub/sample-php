@@ -1,0 +1,30 @@
+body{}
+.header{height: 250px;}
+.menu{margin-bottom: 15px;}
+.menu nav{background-color: #ddd !important;
+list-style: outside none none;
+margin: 0;
+min-height: 40px;
+padding: 0;}
+.menu nav li{float: left; position:relative;
+padding: 10px 15px; }
+.menu nav li a{
+text-decoration: none;
+color: #333;
+}
+.menu nav li:hover{background:#bcbcd0; color:#fff;}
+/*DropDown CSS*/
+.menu nav li nav{left: -99999px;
+position: absolute;
+top: 40px;
+width: 160px;
+z-index: 99999;}
+.menu nav li:hover nav{left:0;}
+.menu nav li nav li{width:160px;}
+.menu nav li nav li a{}
+.menu nav li nav li a:hover{}
+
+.left_sidebar{height: 500px;}
+.middle_content{height: 500px;}
+.right_sidebar{height: 500px;}
+.footer{height: 70px;}

@@ -1,0 +1,45 @@
+.middleContent {
+height:615px;
+margin-left:-30px;
+}
+.loginTitle {
+margin:auto;
+padding:10px;
+}
+.loginContent {
+width:80%;
+margin:auto;
+margin-top:50px;
+background-color:#4FB5D3;
+}
+.signMsg {
+font-family:"Times New Roman", Times, serif;
+padding:10px;
+}
+
+<!-- Sign up part -->
+.signupTitle {
+margin:auto;
+padding:10px;
+}
+
+.middleContentSignUp {
+background-color:#999999;
+height:615px;
+margin-left:-30px;
+}
+.signUpContent {
+font-family:"Times New Roman", Times, serif;
+width:80%;
+margin:auto;
+margin-top:5px;
+}
+.signUpTableContent {
+height:400px;
+padding:20px;
+}
+.signUpTable {
+width:100%;
+height:100%;
+
+}

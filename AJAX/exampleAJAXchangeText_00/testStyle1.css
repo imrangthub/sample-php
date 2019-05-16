@@ -1,0 +1,22 @@
+TIT{
+    margin-left: 400px;
+    color: red;
+    font-size: larger;
+    display: block;
+}
+
+CSE {
+
+    color: darkred;
+
+}
+
+EEE {
+    color: blue;
+
+}
+
+NAME, ID, GENDER {
+    display: block;
+}
+

@@ -1,0 +1,186 @@
+body {
+background-color:#CCCCCC;
+}
+.header {
+background-image:url(../../imageFiles/headerImages/header_2.jpg);
+height:200px;
+margin-bottom:0px;
+}
+.menuBar {
+margin-bottom:0px;
+}
+.menuBar nav {
+background-color:#ddd !important;
+list-style: outside none none;
+margin:0;
+min-height:40px;
+padding:0;
+}
+.menuBar nav li {
+position:relative;
+float:left;
+padding:10px; 15px;
+margin-left:15px;
+}
+.menuBar nav li a {
+text-decoration:none;
+color:#333;
+}
+.menuBar nav li:hover {
+background-color:#999999;
+color:#CCCCCC;
+}
+/*DropDown Design */
+.menuBar nav li nav {
+position:absolute;
+list-style: outside none none;
+left:-99999px;
+top:40px;
+width:160px;
+z-index:9999;
+}
+.menuBar nav li:hover nav {
+left:0;
+}
+.menuBar nav li:hover nav li nav {
+left:-9999px;
+}
+.menuBar nav li nav li {
+margin:0px;
+padding:10px;
+width:160px;
+}
+.menuBar nav li nav li nav {
+position:absolute;
+list-style: outside none none;
+left:-99999px;
+width:160px;
+z-index:9999;
+}
+.menuBar nav li nav li:hover nav {
+left:160px;
+top:0px;
+}
+
+
+
+
+
+
+.leftSubSidebar1 {
+background-color:#CCCCCC;
+padding:10px;
+line-height:40px;
+}
+.middleContent {
+margin-left:-20px;
+}
+.middleSubContent1 {
+background-color:#CCCCCC;
+}
+
+/* submitButton style*/
+.submitButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.submitButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submitButton span:after {
+  content:'»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.submitButton:hover span {
+  padding-right: 25px;
+}
+
+.submitButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* End submitButton style*/
+
+
+/* slidShow */
+
+.slidShow{
+background-color:#CCCCCC;
+height:300px;
+}
+.carousel-inner > .item > img {
+width:500px;
+height:250px;
+margin:auto;
+}
+  
+/* end slidshow*/
+
+
+.middleContentMainRightSidebar {
+background-color:#CCCCCC;
+}
+.RightSubContent1 {
+border-radius:20px/50px;
+background-color:#0099CC;
+padding:10px;
+margin-bottom:10px;
+width:220px;
+height:200px;
+}
+.RightSubContent1_1 {
+list-style:none;
+border-radius:20px/50px;
+padding:10px;
+margin:auto;
+width:220px;
+height:140px;
+}
+.RightSubContent2 {
+border-radius:20px/50px;
+background-color:#0099CC;
+padding:10px;
+margin-bottom:10px;
+width:220px;
+height:200px;
+}
+.RightSubContent2_1 {
+list-style:none;
+border-radius:20px/50px;
+padding:10px;
+margin:auto;
+width:220px;
+height:140px;
+}
+
+
+.footer{
+height:100px;
+}
+.footerSub1 {
+width:100%;
+height:100%;
+padding:5px;
+background-color:#CCCCCC;
+text-align:center;
+}

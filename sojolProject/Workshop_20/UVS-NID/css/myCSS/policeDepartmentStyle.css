@@ -1,0 +1,25 @@
+
+.middleContent {
+height:615px;
+margin-left:-30px;
+}
+.bodyContent {
+margin-top:100px;
+}
+.policHeading {
+padding:10px;
+text-align:center;
+}
+.loginTitle {
+margin:auto;
+padding:10px;
+}
+.loginContent {
+width:80%;
+margin:auto;
+margin-top:50px;
+background-color:#FFCC66;
+}
+.signUp {
+padding:10px;
+}

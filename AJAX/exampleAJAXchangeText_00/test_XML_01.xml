@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/css" href="testStyle1.css" ?>
+<STUDENT>
+    <TIT>
+        This is a student List
+    </TIT>
+
+    <CSE>
+        <NAME> MD IMRAN HOSSAIN</NAME>
+        <ID>132-15-2729</ID>
+        <GENDER> Male </GENDER>
+    </CSE>
+
+    <CSE>
+        <NAME> MD IFTY</NAME>
+        <ID>132-15-2760</ID>
+        <GENDER> Male </GENDER>
+    </CSE>
+
+    <EEE>
+        <NAME> MD SOMUN AHAMED</NAME>
+        <ID>132-15-2353</ID>
+        <GENDER> Male </GENDER>
+
+    </EEE>
+    <EEE>
+        <NAME> MD SOMUN AHAMED</NAME>
+        <ID>132-15-2353</ID>
+        <GENDER> Male </GENDER>
+
+    </EEE>
+
+
+
+
+    </STUDENT>

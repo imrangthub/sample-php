@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>jQuery |start </title>
+
+    <!-- Bootstrap -->
+    <link href="Templating_01/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="Templating_01/css/style.css">
+    <script src="jquery.min.js"></script>
+
+    <style>
+        .para {
+            height: 200px;
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            display: none;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="main_container">
+    <div class="container">
+
+        <header class="header_area">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="logo">
+                        <h2>jQuery</h2>
+                        <P>Learning jQuery and Ajax</P>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navigation">
+            <div class="row">
+                <div class="col-xs-12 col-md-11 col-md-offset-1">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <section class="content_area">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="custom_nav">
+                        <ul>
+                            <li class="bar"></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Registration</a></li>
+                            <li><a href="#">Requirements</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <div class="bar"></div>
+                        <form action="#" class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Search..">
+                                <input type="submit" class="btn btn-default" value="GO >>">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <div class="about_us" style=" height: 500px">
+                            <h2>Sliding Effects </h2>
+
+                            <button class=" btn btn-warning" id="btn1">Slid Down</button>
+                            <button class=" btn btn-success" id="btn2">Slid Up</button>
+                            <button class=" btn btn-primary" id="btn3">Slid Toggle</button>
+
+
+
+
+                            <p id="hideP" class="para">
+                                Welcome !!!. In this section we are providing you some frequently asked PHP Interview Questions which will help you to win interview session easily. Candidates must read this section,Then by heart the questions and answers. Also, review sample answers and advice on how to answer these typical interview questions. PHP is an important part of the web world, and every web developer
+                            </p>
+
+
+
+                            <script>
+
+                                $(document).ready(function(){
+
+                                    $("#btn1").click(function(){
+
+                                        $("#hideP").slideDown('first');
+
+                                    });
+
+                                    $("#btn2").click(function(){
+
+                                        $("#hideP").slideUp(2000);
+
+                                    });
+
+                                    $("#btn3").click(function(){
+
+                                        $(".para").slideToggle('first');
+
+                                    });
+
+
+                                });
+
+
+
+                            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer_area">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="copyright">
+                        <p>&copy; Copyright Md Imran hossain.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="Templating_01/js/bootstrap.min.js"></script>
+</body>
+</html>

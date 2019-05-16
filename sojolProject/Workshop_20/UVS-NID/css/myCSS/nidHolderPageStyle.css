@@ -1,0 +1,19 @@
+.middleContent {
+height:615px;
+margin-left:-30px;
+}
+.loginTitle {
+margin:auto;
+padding:10px;
+}
+.loginContent {
+width:80%;
+margin:auto;
+margin-top:50px;
+background-color:#4FB5D3;
+}
+.LostPasswordMsg {
+margin-top:5px;
+font-family:"Times New Roman", Times, serif;
+
+}

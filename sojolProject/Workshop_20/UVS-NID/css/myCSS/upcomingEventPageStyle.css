@@ -1,0 +1,32 @@
+.middleContent {
+height:615px;
+margin-left:-30px;
+}
+.middleSubContent {
+background-color:#4FB5D3;
+
+}
+.middleSubContent1 {
+font-family:"Times New Roman", Times, serif;
+text-align:center;
+background-color:#4FB5D3;
+font-style:oblique
+}
+.middleSubContent2{
+
+height:300px;
+}
+.bodyContent {
+padding:0 10px;
+margin-top:-10px;
+}
+.pageContent{
+font-family:"Times New Roman";
+width:100%;
+padding:50px;
+}
+.uvsnidHeading{
+width:100%;
+height:100px;
+text-align:center;
+}
