@@ -1,0 +1,50 @@
+Environment:
+what is IDE?
+What is netbeans?
+what is composer? 
+what is git?
+HTML CSS :
+1. what is html/What does HTML stand for?
+2. what is doctype
+3. what are the features of html5
+4. what is html element ?
+5. what is html attribute? 
+6. GET VS POST
+7. class vs id
+8. What is grid in Bootstrap?
+9. what is bootstrap?
+Basic PHP : 
+------
+What is CRUD?
+require_once(), require(), include().What is difference between them? 
+How to declare an array in php?
+What is the difference between Session and Cookie?
+How to create a mysql connection?
+How to select a database?
+Write a program using while loop
+What is the use of header() function in php ? 
+what is the use of isset() in php?
+What is the use of "enctype" attribute in a html form?
+What are the different errors in PHP? 
+What is operator?
+Ans : http://phpinterviewquestions.co.in
+OOP:
+What is object oriented programming? 
+What is object ? 
+What is class? 
+define a class with some method and property (Written)
+what is sub class show an example (Written) 
+What is visibility? Explain public, private, protected with example ( Written ) 
+Method vs function
+What is contructor?
+what is destructor?
+what is namespace?
+What is the Scope Resolution Operator? 
+More @
+http://career.guru99.com/top-100-php-interview-questions-a…/
+Database: 
+Basic insert query (written)
+Basic select query (written)
+Basic Update query (written)
+Basic Delete query (written)
+Basic Join query (written)
